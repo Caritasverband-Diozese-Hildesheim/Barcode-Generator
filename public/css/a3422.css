@@ -1,0 +1,13 @@
+body {
+    background-color: white;
+    width: 210mm;
+    height: 297mm;
+}
+
+.sticker{
+    float: left;
+    width: 70mm;
+    height: 35mm;
+    padding: 2mm;
+    border: gray solid 2px;
+}

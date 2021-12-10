@@ -1,0 +1,41 @@
+{
+  "name": "base_nodejs_bootstrap",
+  "version": "1.0.0",
+  "description": "A start project with nodejs and bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec \"eslint index.js && jsdoc index.js && babel-node index.js\"",
+    "start": "nodemon --exec \"babel-node index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salacryl/base_nodejs_bootstrap.git"
+  },
+  "author": "Bjoern Meier",
+  "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+  "bugs": {
+    "url": "https://github.com/salacryl/base_nodejs_bootstrap/issues"
+  },
+  "homepage": "https://github.com/salacryl/base_nodejs_bootstrap#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "browser-sync": "^2.26.7",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jsbarcode": "^3.11.5",
+    "jsdoc": "^3.6.3",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.2",
+    "winston": "^3.2.1",
+    "xmldom": "^0.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^6.8.0",
+    "eslint-config-strongloop": "^2.1.0"
+  }
+}
