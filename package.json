@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec \"eslint index.js && jsdoc index.js && babel-node index.js\"",
+    "build": "nexe index.js --build --resource \"./views/**/*\"  --resource \"./public/**/*\"",
     "start": "nodemon --exec \"babel-node index.js\""
   },
   "repository": {
@@ -19,23 +20,25 @@
   },
   "homepage": "https://github.com/salacryl/base_nodejs_bootstrap#readme",
   "dependencies": {
-    "axios": "^0.19.2",
-    "browser-sync": "^2.26.7",
+    "axios": "^0.24.0",
+    "browser-sync": "^2.27.7",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "jsbarcode": "^3.11.5",
-    "jsdoc": "^3.6.3",
+    "jsdoc": "^3.6.7",
     "method-override": "^3.0.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.15",
     "winston": "^3.2.1",
-    "xmldom": "^0.6.0"
+    "xmldom": "^0.6.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.16.5",
     "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-env": "^7.16.5",
     "babel-eslint": "^8.2.6",
-    "eslint": "^6.8.0",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.5.0",
     "eslint-config-strongloop": "^2.1.0"
   }
 }
