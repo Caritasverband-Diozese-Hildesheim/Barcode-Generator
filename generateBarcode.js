@@ -1,6 +1,7 @@
-var jsbarcode = require("jsbarcode")
-const fs = require('fs');
-const { DOMImplementation, XMLSerializer } = require('xmldom');
+const  jsbarcode = require(  "jsbarcode");
+const fs = require( 'fs');
+const { DOMImplementation, XMLSerializer } = require( 'xmldom');
+const praefix = process.env.BCGEN_PRAEFIX || "100";
 
 const generateHTMLTagBarcode = (data, res) => {
     let counter={actual: 1}
@@ -10,11 +11,10 @@ const generateHTMLTagBarcode = (data, res) => {
         if(!err){
             counter = JSON.parse(data);
         }
-        let end = counter.actual+24
+        let end = counter.actual+65
         for (counter.actual; counter.actual<end; counter.actual++)
         {
-            console.log(counter.actual)
-            barcode[index] = generateHelper(counter.actual.toString().padStart(8,'0'))
+            barcode[index] = generateHelper(counter.actual.toString().padStart(8,'0'));
             index++
         }
         
@@ -23,7 +23,7 @@ const generateHTMLTagBarcode = (data, res) => {
                 throw err;
             }
         });
-        res.render("a3422", {barcode: barcode,layout: "a3422_layout"});
+        res.render("a3666", {barcode: barcode,layout: "a3666_layout"});
     });
 
 
@@ -35,16 +35,17 @@ const generateHelper = (data) => {
     const document = new DOMImplementation().createDocument('http://www.w3.org/1999/xhtml', 'html', null);
     const svgNode = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 
-    jsbarcode(svgNode, data, {
+    jsbarcode(svgNode,  `${praefix}_${data}`, {
         xmlDocument: document,
-        width: 2.5,
+        width: 0.80,
         height: 75,
+        fontSize: 14
     });
     
     return xmlSerializer.serializeToString(svgNode);
     
 }
 
-export default {
+module.exports= {
     generate : generateHTMLTagBarcode
 }
