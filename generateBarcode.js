@@ -37,9 +37,9 @@ const generateHelper = (data) => {
 
     jsbarcode(svgNode,  `${praefix}_${data}`, {
         xmlDocument: document,
-        width: 0.80,
-        height: 75,
-        fontSize: 14
+        width: 0.90,
+        height: 44,
+        fontSize: 12
     });
     
     return xmlSerializer.serializeToString(svgNode);
