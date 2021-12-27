@@ -39,9 +39,9 @@ const generateHelper = (praefix, data) => {
 
     jsbarcode(svgNode, `${praefix || "100"}_${data}`, {
         xmlDocument: document,
-        width: 0.80,
-        height: 75,
-        fontSize: 14
+        width: 0.90,
+        height: 44,
+        fontSize: 12
     });
 
     return xmlSerializer.serializeToString(svgNode);
