@@ -103,3 +103,4 @@ dist
 # TernJS port file
 .tern-port
 Barcode-Generator.exe
+*_data.json
