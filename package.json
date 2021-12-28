@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec \"eslint index.js && jsdoc index.js && babel-node index.js\"",
-    "build": "nexe index.js --build --resource \"./views/**/*\"  --resource \"./public/**/*\"",
-    "start": "nodemon --exec \"babel-node index.js\""
+    "build": "npx nexe index.js --verbose --build --resource \"./views/**/*\"  --resource \"./public/**/*\"",
+    "start": "npx babel-node index.js"
   },
   "repository": {
     "type": "git",
@@ -27,16 +27,17 @@
     "jsbarcode": "^3.11.5",
     "jsdoc": "^3.6.7",
     "method-override": "^3.0.0",
+    "nexe": "^4.0.0-beta.19",
     "nodemon": "^2.0.15",
     "winston": "^3.2.1",
-    "xmldom": "^0.6.0",
+    "xmldom": ">=0.6.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
+    "@babel/eslint-parser": "^7.16.5",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.16.5",
-    "babel-eslint": "^8.2.6",
     "babel-loader": "^8.2.3",
     "eslint": "^8.5.0",
     "eslint-config-strongloop": "^2.1.0"
