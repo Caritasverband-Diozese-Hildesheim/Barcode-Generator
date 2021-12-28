@@ -2,8 +2,7 @@
 
     @page {
         size: A4;
-        margin-top: 10.7mm;
-        margin-left: 11.9mm;
+        margin-top: 2.7mm;
         margin-bottom: 8.6mm;
         margin-right: 7.9mm;
     }
@@ -11,6 +10,8 @@
         float: left;
         width: 38mm;
         height: 21.2mm;
+		margin-right: 3mm;
+		margin-bottom: 3mm;
         
     }
     
@@ -19,7 +20,7 @@
 body {
     width: 210mm;
     height: 297mm;
-    margin-top: 10.7mm;
+    margin-top: 2.7mm;
     margin-left: 11.9mm;
     margin-bottom: 8.6mm;
     margin-right: 7.9mm;
@@ -28,5 +29,7 @@ body {
     float: left;
     width: 38.1mm;
     height: 21.2mm;
-    
+	margin-right: 3mm;
+	margin-bottom: 3mm;
+
 }
