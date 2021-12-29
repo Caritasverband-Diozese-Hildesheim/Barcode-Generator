@@ -1,30 +1,33 @@
 @media print {
     @page {
         size: A4;
-        margin-top: 5mm;
-        margin-right: 7.9mm;
-        margin-left: 2mm;
+        margin: 0;
+        padding: 0;
     }
     .sticker{
         float: left;
         width: 37mm;
-        height: 20.7mm;
+        height: 20mm;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0; 
 		margin-right: 4mm;
 		margin-bottom: 2mm;
     }
 }
 body {
+    margin: 0;
+    padding: 0;
     width: 210mm;
     height: 297mm;
-    margin-top: 5.0mm;
-    margin-left: 7.9mm;
-    margin-right: 7.9mm;
-    margin-left: 2mm;
 }
 .sticker{
     float: left;
     width: 37mm;
-    height: 20.7mm;
+    height: 20mm;
+    margin-left: 0;
+        margin-top: 0;
+        padding: 0; 
 	margin-right: 4mm;
 	margin-bottom: 2mm;
 }
