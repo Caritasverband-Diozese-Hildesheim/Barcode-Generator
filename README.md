@@ -1,2 +1,2 @@
 # Barcode Generator
-Generates a barcode
+Generates a barcode for Avery 3666
