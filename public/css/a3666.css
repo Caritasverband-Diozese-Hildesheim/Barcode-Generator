@@ -13,9 +13,9 @@
         margin-left: 0;
         margin-top: 0;
         padding: 0; 
-		margin-right: 3mm;
-		margin-bottom: 1mm;
-    }
+		margin-right: 1mm;
+		margin-bottom: 3mm;    
+    }        
 }
 body {
     margin: 0;
@@ -32,6 +32,6 @@ body {
     margin-left: 0;
     margin-top: 0;
     padding: 0; 
-	margin-right: 3mm;
-	margin-bottom: 1mm;
+	margin-right: 1mm;
+	margin-bottom: 3mm;
 }
