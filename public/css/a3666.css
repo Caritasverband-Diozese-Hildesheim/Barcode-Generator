@@ -9,7 +9,7 @@
     .sticker{
         float: left;
         width: 37mm;
-        height: 21.2mm;
+        height: 21.0mm;
 		margin-right: 4mm;
 		margin-bottom: 2mm;
     }
@@ -26,7 +26,7 @@ body {
 .sticker{
     float: left;
     width: 37mm;
-    height: 21.2mm;
+    height: 21.0mm;
 	margin-right: 4mm;
 	margin-bottom: 2mm;
 }
