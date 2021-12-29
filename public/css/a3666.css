@@ -5,7 +5,7 @@
         margin-top: 5.7mm;
         margin-bottom: 8.6mm;
         margin-right: 7.9mm;
-        margin-left: -5mm;
+        margin-left: 1mm;
     }
     .sticker{
         float: left;
@@ -25,7 +25,7 @@ body {
     margin-left: 7.9mm;
     margin-bottom: 8.6mm;
     margin-right: 7.9mm;
-    margin-left: -5mm;
+    margin-left: 1mm;
 }
 .sticker{
     float: left;
